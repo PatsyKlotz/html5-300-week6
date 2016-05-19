@@ -33,8 +33,7 @@ $('#create-submit').off( );
 $('#create-submit').on( 'click', function( evt ) {
     var baseUrl = 'https://shielded-sea-3725.herokuapp.com/data-api/';
     var collection = 'pneher'; //Use your own!
-    var first name = $('#create-firstname').val();
-    var last name = $('#create-lastname').val();
+    var name = $('#create-name').val();
     var age = $('#create-age').val();
 
     evt.preventDefault( );
