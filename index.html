@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+ jQuery CDN link....  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <!--<meta name="viewport" content="initial-scale=1.0">-->
+    <meta charset="UTF-8">	
+    <title>HTML5 300: Week Six</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- link to an external style sheet (best practice with style sheet)-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+  <body class="page"><!-- everything that is visual goes in the body tag  -->
+    <header>
+        <!-- the "banner" area or title of the page-->
+        <h1>HTML5 300: Week Six</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header>
+      <nav class="nav1"> 
+        <ul>
+          <!-- these links are relative paths -->
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="http://patsyklotz.github.io/html5-300-week5/">Week Five</a></li>
+         <!-- <li> <a href="javascript/restful-data-API.js">JavaScript</a></li>-->
+          <li> <a href="http://www.google.com">Google</a></li>
+        </ul>
+      </nav>
+      <div id="mainContent">
+        <h2>Assignment Six: RESTful Data API</h3>
+          <!-- A Simple Form    -->
+          <p>Create a web page with separate forms for each of the basic database operations, similar to the ones used in the lecture. Will need forms for creating, reading, updating, and deleting an item. Should also have a button for listing all of the items. For each of the forms, and the button, the event handler should make the appropriate AJAX call. Can use console.log() to display results, but it's better to display the results on the web page.</p>  
+        <h2>REST Forms</h2>
+        <p>The following four forms represent the four basid CRUD operations on a database: Create, Read, Update, and Delete.</p>
+          <form action="post" id="create" style="display:block">
+            <legend>Create Operation:</legend>
+                First Name:<br>
+              <input type="text" name="create-firstname" placeholder="First Name"><br>
+                Last Name:<br>
+              <input type="text" name="create-lastname" placeholder="Last Name"><br>
+                Age:
+              <input type="number" name="create-age" placeholder="Age"><br>
+              <button type="button" name="create-submit">Submit</button>
+            </form>
+            <form action="get" id="read" style="display:block">
+            <legend>Read Operation:</legend>
+              List:
+              <br>
+               <button type="button">List</button>
+              <br>
+              Single Item:
+              <br>
+              <button type="button">Submit</button>
+              <br>
+            </form>
+            <form>
+              <legend>Update Operation:</legend>
+                ID:<br>
+              <input type="text" name="ID" placeholder="ID"><br>
+                Name:<br>
+              <input type="text" name="name" placeholder="Name"><br>
+                Age:
+              <input type="number" name="age" placeholder="Age"><br>
+              <button type="button">Submit</button>
+            </form>
+            <form>
+              <legend>Delete Operation:</legend>
+                ID:<br>
+              <input type="text" name="ID" placeholder="ID"><br>
+              <button type="button">Submit</button>
+            </form>
+          <br>    
+          <button onclick="myFunction()">Reset Form</button>
+        </form>
+       </div><!-- closing maincContent div tag -->
+      <script type="text/javascript" src="javascript/restful-data-API.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.js"></script>
+    <footer> 
+      <p>&copy; copyright 2016</p>
+    </footer>
+  </body>
+</html>
